@@ -21,7 +21,7 @@ export default Controller.extend({
             { name: this.newGenreName 
             
             });
-            await newGenre.save();
+             newGenre.save();
             this.setProperties({
                 newGenreName: '',
                 isAddingGenre: false
