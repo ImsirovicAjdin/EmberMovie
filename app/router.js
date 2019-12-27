@@ -13,7 +13,6 @@ Router.map(function() {
       this.route('details');
     });
   });
-  this.route('index1');
 });
 
   

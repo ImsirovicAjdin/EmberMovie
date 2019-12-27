@@ -25,6 +25,6 @@ export default function() {
   */
 
  this.get('/genres');
- this.get('/genres/:id');
- this.post('/genres');
+//  this.get('/genres/:id');
+//  this.post('/genres');
 }
