@@ -1,7 +1,6 @@
 import Controller from '@ember/controller';
 import { empty } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
-import Genre from '../models/genre';
 
 export default Controller.extend({
     isAddingGenre: false,
@@ -22,7 +21,7 @@ export default Controller.extend({
             { name: this.newGenreName 
             
             });
-            await newGenre.save();
+             newGenre.save();
             this.setProperties({
                 newGenreName: '',
                 isAddingGenre: false
