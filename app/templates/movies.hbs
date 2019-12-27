@@ -1,0 +1,8 @@
+<ul class="list pl3">
+    {{#each @model as |movie|}}
+    <li>
+        {{@movie.title}} by <em>{{@movie.genre}}</em>
+        <span class="rating fr">{{@movie.rating}}</span>
+    </li>
+    {{/each}}
+</ul>

@@ -1,5 +1,11 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<div class="rr-container">
+    <div class="rr-page-header">
+        <LinkTo @route="index" class="rr-header-link">
+        <h1 class="rr-app-title">List of Movies</h1>
+       </LinkTo>
+    </div>
+    <div class="rr-main-content">
 
-{{outlet}}
+        {{outlet}}
+    </div>
+</div>

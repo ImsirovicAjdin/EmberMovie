@@ -7,4 +7,13 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+
+  this.route('genres', function() {
+    this.route('genre', { path: ':id' }, function() {
+      this.route('movies');
+      this.route('details');
+    });
+  });
 });
+
+  
