@@ -6,7 +6,6 @@ export default Component.extend({
     rating: 0,
     maxRating: 5,
     onClick() {},
-    
 
     stars: computed('rating', 'maxRating', function() {
         let stars = [];
